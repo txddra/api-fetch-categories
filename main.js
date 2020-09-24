@@ -31,8 +31,11 @@ fetch(url)
     let arr = newData.entries
     arr.forEach(element => {
         console.log(`API: ${element.API}`);
-        console.log(`Link: ${element.Link}`)
-        
+        console.log(`Link: ${element.Link}`);
+        console.log(`Category: ${element.Category}`);
+        console.log('')
+        console.log('---')
+        console.log('')
     });
 }
     )
@@ -55,7 +58,7 @@ fetch(url)
 // API: Cat Facts
 // Description: Daily cat facts
 // Link: https://alexwohlbruck.github.io/cat-facts/
-// Category: Animals
+// Category: Animals 
 
 // ---
 
