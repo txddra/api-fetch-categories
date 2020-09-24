@@ -31,7 +31,7 @@ fetch(url)
     let arr = newData.entries
     arr.forEach(element => {
         console.log(`API: ${element.API}`);
-        
+        console.log(`Link: ${element.Link}`)
         
     });
 }
