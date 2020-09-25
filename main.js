@@ -30,20 +30,23 @@ fetch(url)
 .then((newData) =>{
     let arr = newData.entries
     arr.forEach(element => {
+    if(element.Category === 'Animals'){
+
         console.log(`API: ${element.API}`);
+        console.log(`Description: ${element.Description}`)
         console.log(`Link: ${element.Link}`);
         console.log(`Category: ${element.Category}`);
         console.log('')
         console.log('---')
         console.log('')
-    });
+        }    });
 }
     )
 
 
 
 
-.catch(error => console.log('Error!'))
+.catch(error => console.log('error'))
 // .then((newData) =>{
 //     return newData.map(({API})=>
 //     console.log(`${API}`))
